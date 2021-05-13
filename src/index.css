@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --plt1-clr-darker:  #03252B;
+  --plt1-clr-dark:    #1A535C;
+  --plt1-clr-reg:     #4ECDC4;
+  --plt1-clr-light:   #F7FFF7;
+  --plt1-clr-accent1: #FFE66D;
+  --plt1-clr-accent2: #FF6B6B;
+
+  --clr-darker:   var(--plt1-clr-darker);
+  --clr-dark:     var(--plt1-clr-dark);
+  --clr-reg:      var(--plt1-clr-reg);
+  --clr-light:    var(--plt1-clr-light);
+  --clr-accent1:  var(--plt1-clr-accent1);
+  --clr-accent2:  var(--plt1-clr-accent2);
+
+  /** FONTS **/
+
+  --ff-primary: 'Montserrat', sans-serif;
+
+  --fw-reg:   400;
+  --fw-bold:  700;
+
+  --fs-h1:    2.25rem;
+  --fs-h2:    1.75rem;
+  --fs-h3:    1.25rem;
+  --fs-body:  1rem;
+
+  /** BUTTONS **/
+  --letter-spacing-btn: .05em; /* Buttons letter spacing */
+  --border-radius-btn: 2em; /* Border Radius */
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+  --app-padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+      --fs-h1: 4.5rem;
+      --fs-h2: 3.75rem;
+      --fs-h3: 1.5rem;
+      --fs-body: 1.125rem;
+
+      --app-padding: 1.25rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
 }

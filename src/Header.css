@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header-logo {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  color: var(--clr-reg);
+}
+
+.Header-menu-btn {
+  height: 2em;
+}
+
+.Header-menu-btn path {
+  fill: var(--clr-reg);
+}
